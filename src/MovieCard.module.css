@@ -1,0 +1,250 @@
+.main{
+    width:80%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    height: 180px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+        sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+}
+.movieCard {
+    background: #fff;
+    padding: 0;
+    border: none;
+    border-radius: 10px;
+    /* box-shadow: 0 1px 3px 0 #d4d4d5, 0 0 0 1px #f1f1f1; */
+    display: flex;
+  }
+.left{
+    width:30%;
+    border: 1px solid rgba(222, 184, 135, 0.732);
+}
+.left img{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+.right{
+    width:70%;
+    padding: 15px;
+    background-color:rgba(248, 237, 220, 0.808);
+    height: 180px;
+    position:relative;
+}
+.title{
+    font-size: larger;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+.plot{
+    font-size: medium;
+}
+.price{
+    color:green;
+    font-weight:700;
+    padding-top: 5px;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 50px;
+    padding: 10px 30px;
+  box-sizing: border-box;
+    
+}
+.icon{
+    height: 15px;  
+}
+.starIcon{
+    height: 20px;
+    margin-left: 3px;
+    margin-right:3px;
+}
+.stars{
+    font-size: large;
+    padding-left:5px;
+    position:relative;
+    top:-3px;
+}
+.favourite{
+    padding:6px;
+    background-color: rgb(150, 60, 235);
+    border:none;
+    color:white;
+    border-radius: 0.5rem;
+    margin-right: 8px;
+}
+.unfavourite{
+    padding:6px;
+    background-color: rgb(236, 70, 194);
+    border:none;
+    color:white;
+    border-radius: 0.5rem;
+    margin-right: 8px;
+}
+.cart{
+    padding:6px;
+    background-color: rgb(252, 53, 35);
+    border:none;
+    color:white;
+    border-radius: 0.5rem;
+}
+.uncart{
+    padding:6px;
+    background-color: rgba(8, 92, 8, 0.85);
+    border:none;
+    color:white;
+    border-radius: 0.5rem;  
+}
+@media screen and (max-width:819px){
+    .plot{
+        font-size: small;
+    }   
+}
+@media screen and (max-width:750px){
+    .footer{
+        position:absolute;
+        bottom: 0px;
+        /* margin-top:15px; */
+        /* justify-content: normal; */
+        padding-left:0px;
+
+    }
+    .rating{
+        font-size:small;
+        margin:0 auto;
+    }
+    .price{
+        font-size:small;
+    }
+    .yourRating{
+        margin:0 auto;
+    }
+    .buttons{
+        margin:0 auto;
+    }
+    .icon{
+        height:15px;
+    }
+    .starIcon{
+        height: 20px;
+    }
+    .stars{
+        font-size:medium;
+    }
+    .favourite{
+        visibility: hidden;
+        margin-right:-70px;
+    }
+    .favourite:after{
+        content:'';
+        background-image: url("https://cdn-icons-png.flaticon.com/128/9374/9374324.png");
+        visibility: visible;
+        display: inline-block;
+        height: 30px;
+        width:20px;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .unfavourite{
+        visibility: hidden;
+        margin-right:-70px;
+    }
+    .unfavourite:after{
+        content:'';
+        background-image: url("https://cdn-icons-png.flaticon.com/128/11523/11523935.png");
+        visibility: visible;
+        display: inline-block;
+        height: 30px;
+        width:20px;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .cart{
+        visibility: hidden;
+        margin-right:5px;
+    }
+    .cart:after{
+        content:'';
+        background-image: url('https://cdn-icons-png.flaticon.com/128/891/891407.png');
+        visibility: visible;
+        display: inline-block;
+        height: 30px;
+        width:20px;
+        background-repeat: no-repeat;
+        background-size: contain;
+       
+    }
+    .uncart{
+       visibility: hidden;
+       margin-right:5px;
+       margin-left:-40px;
+    }
+    .uncart:after{
+        content:'';
+        background-image: url('https://cdn-icons-png.flaticon.com/128/10967/10967115.png');
+        visibility: visible;
+        display: inline-block;
+        height: 30px;
+        width:20px;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+}
+@media screen and (max-width:575px){
+    .title{
+        font-size: medium;
+    }
+    .rating{
+        font-size:x-small;
+        margin-right:6px;
+    }
+    .price{
+        font-size:x-small;
+    }
+    .icon{
+        height: 10px;
+    }
+    .starIcon{
+        height: 15px;
+    }
+    .stars{
+        font-size:x-small;
+       margin-right:0px;
+    }
+    .favourite{
+        margin-right:-50px;
+    }
+    .favourite:after{
+        display: inline-block;
+        height: 20px;
+        width:15px;
+    }
+    .cart{
+        margin-right:2px;
+    }
+    .cart:after{
+        display:inline-block;
+        height:20px;
+        width:15px;
+    }
+    .unfavourite{
+        margin-right:-150px;
+    }
+    .unfavourite:after{
+        display: inline-block;
+        height: 20px;
+        width:15px;
+    }
+    .uncart:after{
+        display:inline-block;
+        height:20px;
+        width:15px;
+    }
+    
+}
